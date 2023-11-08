@@ -15,7 +15,7 @@
 
 ![1](https://github.com/Tishon1532/bridge_room/blob/main/img/1.jpg?raw=true)
 
->**如何找群id** 在运行日志里：'room_wxid'即代表群的id  如：'room_wxid': '187209741@chatroom'
+
 >
 # config.json文件内容示例
 ```bash
@@ -30,6 +30,7 @@
   "work_mode": 1                                              # 工作模式，即1代表管理员、2代表单向、3代表双向
  }
 ```
+>**如何找群id** 在主项目运行日志里：'room_wxid'即代表每个群的ID。把这个ID填在config.json的room_wxid就代表是主群，填在member_list就代表是副群。
 
 ## 实现原理
 > 因为要实现监听所有群的任何消息和发送内容，依靠插件的优先级实现不了，本插件实现原理为修改原框架，写成插件目的只是为了方便使用godcmd开启和关闭。通过识别插件的开关来判断是否开启框架的调用,为了尽可能减少因修改框架对每个人装的各种各样的其他插件的影响，目前本项目只提供文字消息类转发。
