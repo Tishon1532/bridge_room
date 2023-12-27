@@ -48,7 +48,7 @@ ntchat_channel需要在def handle_group(self, cmsg: ChatMessage)下修改代码�
             if config["plugins"]["bridge_room"]["enabled"] == False:
                 pass
             else:
-                from plugins.forward.main import send_message_synv
+                from plugins.bridge_room.main import send_message_synv
                 try:
                     send_message_synv(cmsg)
                 except Exception as e:
