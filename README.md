@@ -87,7 +87,7 @@ elif any(cmd in info["alias"] for info in ADMIN_COMMANDS.values()):
 ```
 
                         elif cmd == "bridge_room":
-                            from plugins.forward.main import change_work_mode
+                            from plugins.bridge_room.main import change_work_mode
                             if args[0] == "管理员":
                                 # 管理员模式，work_mode置为1
                                 ok, result = True, change_work_mode(1)
