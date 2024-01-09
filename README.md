@@ -100,6 +100,3 @@ elif any(cmd in info["alias"] for info in ADMIN_COMMANDS.values()):
                                 ok, result = True, change_work_mode(3)
 ```
 ```
-看完了还不会的，还有需要完整版（可以转发图片、引用、表情、视频等类型）的，具体可以进群了解。
-
-![4](https://github.com/Tishon1532/bridge_room/blob/main/img/4.jpg?raw=true)+
